@@ -24,14 +24,12 @@ public class RetriableTask<T> implements Callable<T>
         this(DEFAULT_NUMBER_OF_RETRIES, DEFAULT_TIME_TO_WAIT, task);
     }
 
-    public RetriableTask(long numberOfRetries, long baseTimeToWait,
-                         Callable<T> task)
+    public RetriableTask(long numberOfRetries, long baseTimeToWait, Callable<T> task)
     {
         this(numberOfRetries, baseTimeToWait, task, BackoffPolicy.CONSTANT_BASE_TIME);
     }
 
-    public RetriableTask(long numberOfRetries, long baseTimeToWait,
-                         Callable<T> task, BackoffPolicy backoffPolicy)
+    public RetriableTask(long numberOfRetries, long baseTimeToWait, Callable<T> task, BackoffPolicy backoffPolicy)
     {
         this.numberOfRetries = numberOfRetries;
         numberOfTriesLeft = numberOfRetries + 1 /* one for its own accord */;
