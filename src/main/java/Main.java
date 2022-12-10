@@ -1,12 +1,10 @@
 import client.ClientCall;
+import lombok.extern.slf4j.Slf4j;
 
-import java.io.IOException;
-
+@Slf4j
 public class Main {
-    public static void main(String[] args) throws IOException {
-        System.out.println("Hello world!");
+    public static void main(String[] args)  {
         ClientCall clientCall = new ClientCall();
-//        clientCall.getDummyData();
-        System.out.println(clientCall.getDummyData2());
+        log.info("Output {}", clientCall.getDummyApiData());
     }
 }

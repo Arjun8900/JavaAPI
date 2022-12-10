@@ -1,2 +1,9 @@
 2022-12-10 16:26:05 INFO  ClientCall:16 - Trying: reqres.in
 2022-12-10 16:26:05 WARN  ClientCall:17 - Trying: reqres.in
+2022-12-10 16:29:47 INFO  ClientCall:16 - Trying: reqres.in
+2022-12-10 16:29:47 WARN  ClientCall:17 - Trying: reqres.in
+2022-12-10 16:37:03 INFO  ClientCall:17 - BADGER END POINT: reqres.in, 0
+2022-12-10 16:37:05 INFO  ClientCall:32 - BADGER: View Api Response = ClientCallData(insideData=InsideData(id=3, name=true red, year=2002, color=#BF1932, pantone_value=19-1664))
+2022-12-10 16:37:46 INFO  ClientCall:17 - BADGER END POINT: reqres.in, 0
+2022-12-10 16:37:48 INFO  ClientCall:32 - BADGER: View Api Response = ClientCallData(insideData=InsideData(id=3, name=true red, year=2002, color=#BF1932, pantone_value=19-1664))
+2022-12-10 16:37:48 INFO  Main:8 - Output ClientCallData(insideData=InsideData(id=3, name=true red, year=2002, color=#BF1932, pantone_value=19-1664))

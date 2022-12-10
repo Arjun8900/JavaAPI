@@ -28,10 +28,8 @@ class RealRequestHandler implements RequestHandler
     private final ObjectMapper objectMapper;
     private final String clientName = "exodus-http-client";
 
-//    RealRequestHandler(MetricRegistry metricRegistry, HttpClientConfiguration httpClientConf)
     RealRequestHandler()
     {
-//        this.httpClient = new HttpClientBuilder(metricRegistry).using(httpClientConf).build(clientName);
         this.httpClient = new DefaultHttpClient();
         this.objectMapper = new ObjectMapper();
     }

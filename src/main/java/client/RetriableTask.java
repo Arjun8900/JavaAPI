@@ -10,8 +10,6 @@ import java.util.concurrent.CancellationException;
 @Slf4j
 public class RetriableTask<T> implements Callable<T>
 {
-//    Logger log = Logger.getLogger(RetriableTask.class);
-
     private static final long DEFAULT_NUMBER_OF_RETRIES = 2;
     private static final long DEFAULT_TIME_TO_WAIT = 30 * 1000;
     private final long numberOfRetries;
