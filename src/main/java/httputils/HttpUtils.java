@@ -1,4 +1,4 @@
-package client;
+package httputils;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -50,6 +50,7 @@ public class HttpUtils {
         headers.entrySet().forEach(header -> request.setHeader(header.getKey(), header.getValue()));
         return this.requestHandler.executeHttpRequest(host, port, request, null, OK_SET, type);
     }
+
     public <T> Response<T> putBody(String host, int port, String path, NameValueList params, Object postBody, TypeReference<T> type, Map<String, String> headers)
     {
         HttpPut request = new HttpPut(combine(path, params));

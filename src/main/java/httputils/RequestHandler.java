@@ -1,4 +1,4 @@
-package client;
+package httputils;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import org.apache.http.client.methods.HttpRequestBase;

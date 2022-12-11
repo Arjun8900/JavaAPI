@@ -1,4 +1,4 @@
-package client;
+package httputils;
 
 
 import lombok.extern.slf4j.Slf4j;

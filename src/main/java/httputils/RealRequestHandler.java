@@ -1,4 +1,4 @@
-package client;
+package httputils;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -47,7 +47,7 @@ class RealRequestHandler implements RequestHandler
     {
         HttpUtils.Response<T> result = null;
         try {
-            log.debug("URL {}, {}, {}, {}", hostName, port, request, headers);
+            log.info("URL {}, {}, {}, {}", hostName, port, request, headers);
             HttpHost host = new HttpHost(hostName, port);
             if (headers != null) {
                 addHeaders(request, headers);
@@ -69,7 +69,7 @@ class RealRequestHandler implements RequestHandler
                 result = new HttpUtils.Response<T>(response.getStatusLine().getStatusCode(), null,
                         EntityUtils.toString(response.getEntity()), response.getStatusLine().getReasonPhrase());
             }
-            log.debug("Returning {}", result);
+            log.info("Returning {}", result);
         }
         catch (IOException e) {
             log.error("Error while getting response " + hostName + ", " + port + ", " + request, e);
