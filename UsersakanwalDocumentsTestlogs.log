@@ -55,3 +55,11 @@
 2022-12-11 10:17:46 INFO  RealRequestHandler:50 - URL reqres.in, 0, GET /api/products/3 HTTP/1.1, null
 2022-12-11 10:17:47 INFO  RealRequestHandler:72 - Returning httputils.HttpUtils$Response@682b2fa
 2022-12-11 10:17:47 INFO  ClientCall:34 - BADGER: View Api Response = {data={id=3, name=true red, year=2002, color=#BF1932, pantone_value=19-1664}, support={url=https://reqres.in/#support-heading, text=To keep ReqRes free, contributions towards server costs are appreciated!}}
+2022-12-11 10:30:16 INFO  ClientCall:17 - BADGER END POINT: host = reqres.in, port = 0
+2022-12-11 10:30:16 INFO  RealRequestHandler:50 - URL reqres.in, 0, GET /api/products/3 HTTP/1.1, null
+2022-12-11 10:30:17 INFO  RealRequestHandler:72 - Returning httputils.HttpUtils$Response@682b2fa
+2022-12-11 10:30:17 INFO  ClientCall:31 - BADGER: View Api Response = {data={id=3, name=true red, year=2002, color=#BF1932, pantone_value=19-1664}, support={url=https://reqres.in/#support-heading, text=To keep ReqRes free, contributions towards server costs are appreciated!}}
+2022-12-11 10:33:47 INFO  ClientCall:17 - BADGER END POINT: host = reqres.in, port = 0
+2022-12-11 10:33:47 INFO  RealRequestHandler:50 - URL reqres.in, 0, GET /api/products/3 HTTP/1.1, null
+2022-12-11 10:33:48 INFO  RealRequestHandler:72 - Returning httputils.HttpUtils$Response@682b2fa
+2022-12-11 10:33:48 INFO  ClientCall:31 - BADGER: View Api Response = {data={id=3, name=true red, year=2002, color=#BF1932, pantone_value=19-1664}, support={url=https://reqres.in/#support-heading, text=To keep ReqRes free, contributions towards server costs are appreciated!}}
