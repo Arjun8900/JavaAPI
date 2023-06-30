@@ -18,5 +18,7 @@ public class Main {
         IClient<ClientCallData> clientCall2 = new ClientCall<>();
         ClientCallData accountList = mapper.convertValue(clientCall2.getData("reqres.in", 0, "/api/products/3"), typeReference);
         System.out.println(accountList);
+
+
     }
 }
